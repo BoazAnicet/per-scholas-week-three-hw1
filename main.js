@@ -64,6 +64,12 @@ would return 40.
 
 // const multiplyArray = (arr) => arr.reduce((acc, curr) => acc * curr, 1);
 
+// function multiplyArray(arr) {
+//   return arr.reduce(function (acc, curr) {
+//     return acc * curr;
+//   }, 1);
+// }
+
 // console.log(multiplyArray([2, 4, 5])); // 40
 // console.log(multiplyArray([23958723, 0, 4377672369])); // 0
 // console.log(multiplyArray([2, 2, 2, 2, 2])); // 32
@@ -110,15 +116,21 @@ an argument and returns the length
 of the longest string.
 */
 
-// const longestStringInArray = (arr) => {
-//   return Math.max(...arr.length);
-// };
+// const longestStringInArray = (arr) => Math.max(...arr.map((el) => el.length));
 
 // console.log(
 //   longestStringInArray([
 //     "Hello world!",
 //     "Good morning.",
 //     "What's for breakfast?",
+//   ])
+// );
+
+// console.log(
+//   longestStringInArray([
+//     "In heaven's name...",
+//     "Why are you walking away?",
+//     "Hang on to your love.",
 //   ])
 // );
 
